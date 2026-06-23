@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | Алладин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==================== ШАПКА ==================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="Логотип" class="header__logo-img">
+               
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html" class="active">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="tel:+73952200156" class="header__phone">
+                    <i class="fas fa-phone-alt"></i> +7 (3952) 200-156
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="btn btn-primary header__btn" id="openFormBtn">Заказать звонок</button>
+            </div>
+            <button class="header__burger" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Наши услуги</h1>
+                <p>Собственное производство. Полный цикл.</p>
+            </div>
+        </section>
+
+        <section class="services-full">
+            <div class="container">
+               <div class="services__grid">
+    <div class="service-card">
+        <i class="fas fa-tshirt service-card__icon"></i>
+        <h3>Печать на одежде</h3>
+        <p>Футболки, худи, сумки, спецодежда. DTF-печать, сублимация, термотрансфер.</p>
+        <span class="service-card__tag"> при заказе от 30 шт. скидка</span>
+
+    </div>
+    <div class="service-card">
+        <i class="fas fa-gift service-card__icon"></i>
+        <h3>Сувениры и призы</h3>
+        <p>Брелоки, медали, шкатулки, кружки. Акрил, дерево, пластик, металл.</p>
+        <span class="service-card__tag">дизайн в подарок</span>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-store service-card__icon"></i>
+        <h3>POS-продукция</h3>
+        <p>Менюхолдеры, держатели ценников, подставки, визитницы, промо-стойки.</p>
+        <span class="service-card__tag">для магазинов</span>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-sign service-card__icon"></i>
+        <h3>Наружная реклама</h3>
+        <p>Световые короба, объёмные буквы, баннеры, штендеры, вывески.</p>
+        <span class="service-card__tag">монтаж</span>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-microscope service-card__icon"></i>
+        <h3>Цифровые услуги</h3>
+        <p>ЧПУ-фрезеровка, лазерная резка, интерьерная печать 1440 dpi, гравировка.</p>
+        <span class="service-card__tag">точность</span>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-pen-fancy service-card__icon"></i>
+        <h3>Разработка дизайна</h3>
+        <p>Адаптивный дизайн, макеты для печати, фирменный стиль, брендинг.</p>
+        <span class="service-card__tag">под ключ</span>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-flag service-card__icon"></i>
+        <h3>Широкоформатная печать</h3>
+        <p>Баннеры, плакаты, постеры, интерьерная печать на различных материалах.</p>
+        <span class="service-card__tag">от 3-х м²</span>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-ad service-card__icon"></i>
+        <h3>Внутреняя реклама</h3>
+        <p>Интерьерные вывески, навигация, стенды, таблички для помещений.</p>
+        <span class="service-card__tag">внутри помещений</span>
+    </div>
+   <div class="service-card">
+    <i class="fas fa-car service-card__icon"></i>
+    <h3>Брендированная оклейка авто</h3>
+    <p>Нанесение логотипов, рекламных надписей и контактов компании на автомобили.</p>
+    <span class="service-card__tag">реклама на колёсах</span>
+</div>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== ПОДВАЛ (НАПОЛНЕННЫЙ) ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo">Алладин</div>
+                <p>Рекламное производство полного цикла в Иркутске. От дизайна до воплощения.</p>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__heading">Услуги</h4>
+                <a href="services.html">Печать на одежде</a>
+                <a href="services.html">Сувениры и призы</a>
+                <a href="services.html">POS-продукция</a>
+                <a href="services.html">Наружная реклама</a>
+            </div>
+            <div class="footer__contacts">
+                <h4 class="footer__heading">Контакты</h4>
+                <a href="tel:+73952200156"><i class="fas fa-phone-alt"></i> +7 (3952) 200-156</a>
+                <a href="mailto:post1@alladin-irk.ru"><i class="fas fa-envelope"></i> post1@alladin-irk.ru</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Иркутск, ул. Горького, д. 36в</a>
+            </div>
+            <div class="footer__social">
+                <h4 class="footer__heading">Мы в соцсетях</h4>
+                <div>
+                    <a href="https://vk.ru/olga_alladin" target="_blank" rel="noopener noreferrer"><i class="fab fa-vk"></i></a>
+                    <a href="https://t.me/alladin_irkutsk" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Рекламное производство «Алладин». Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

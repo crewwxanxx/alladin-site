@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Алладин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==================== ШАПКА ==================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png"  alt="Логотип" class="header__logo-img">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html" class="active">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="tel:+73952200156" class="header__phone">
+                    <i class="fas fa-phone-alt"></i> +7 (3952) 200-156
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="btn btn-primary header__btn" id="openFormBtn">Заказать звонок</button>
+            </div>
+            <button class="header__burger" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Портфолио</h1>
+                <p>Примеры нашей работы</p>
+            </div>
+        </section>
+
+        <!-- ==================== ПОРТФОЛИО (сетка) ==================== -->
+<section class="portfolio-grid-full">
+    <div class="container">
+        <h2 class="section-title">Наши работы</h2>
+        <p class="section-subtitle">Реальные проекты, воплощённые в жизнь</p>
+        
+        <div class="portfolio__grid" id="portfolioGallery">
+            <div class="portfolio__item">
+                <a href="images/portfolio-1.jpg">
+                    <img src="images/portfolio-1.jpg" alt="Работа 1">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-2.jpg">
+                    <img src="images/portfolio-2.jpg" alt="Работа 2">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-3.jpg">
+                    <img src="images/portfolio-3.jpg" alt="Работа 3">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-4.jpg">
+                    <img src="images/portfolio-4.jpg" alt="Работа 4">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-5.jpg">
+                    <img src="images/portfolio-5.jpg" alt="Работа 5">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-6.jpg">
+                    <img src="images/portfolio-6.jpg" alt="Работа 6">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-7.jpg">
+                    <img src="images/portfolio-7.jpg" alt="Работа 7">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-8.jpg">
+                    <img src="images/portfolio-8.jpg" alt="Работа 8">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/portfolio-9.jpg">
+                    <img src="images/portfolio-9.jpg" alt="Работа 9">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+   <!-- ==================== ПОДВАЛ (НАПОЛНЕННЫЙ) ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo">Алладин</div>
+                <p>Рекламное производство полного цикла в Иркутске. От дизайна до воплощения.</p>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__heading">Услуги</h4>
+                <a href="services.html">Печать на одежде</a>
+                <a href="services.html">Сувениры и призы</a>
+                <a href="services.html">POS-продукция</a>
+                <a href="services.html">Наружная реклама</a>
+            </div>
+            <div class="footer__contacts">
+                <h4 class="footer__heading">Контакты</h4>
+                <a href="tel:+73952200156"><i class="fas fa-phone-alt"></i> +7 (3952) 200-156</a>
+                <a href="mailto:post1@alladin-irk.ru"><i class="fas fa-envelope"></i> post1@alladin-irk.ru</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Иркутск, ул. Горького, д. 36в</a>
+            </div>
+            <div class="footer__social">
+                <h4 class="footer__heading">Мы в соцсетях</h4>
+                <div>
+                    <a href="https://vk.ru/olga_alladin" target="_blank" rel="noopener noreferrer"><i class="fab fa-vk"></i></a>
+                    <a href="https://t.me/alladin_irkutsk" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Рекламное производство «Алладин». Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <span class="lightbox-prev">&#10094;</span>
+
+    <img id="lightbox-img" src="" alt="">
+
+    <span class="lightbox-next">&#10095;</span>
+</div>
+
+<script>
+const images = document.querySelectorAll('.portfolio__item img, .portfolio-preview__item img');
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox-close');
+const prevBtn = document.querySelector('.lightbox-prev');
+const nextBtn = document.querySelector('.lightbox-next');
+
+let currentIndex = 0;
+
+images.forEach((img, index) => {
+    img.parentElement.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        currentIndex = index;
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+});
+
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+
+    if (e.key === 'ArrowRight') nextBtn.click();
+    if (e.key === 'ArrowLeft') prevBtn.click();
+    if (e.key === 'Escape') closeBtn.click();
+});
+</script>
+
+     <script src="js/theme.js"></script>
+     <script src="js/header.js"></script>
+</body>
+</html>

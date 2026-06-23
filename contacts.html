@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Алладин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==================== ШАПКА ==================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="Логотип" class="header__logo-img">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="tel:+73952200156" class="header__phone">
+                    <i class="fas fa-phone-alt"></i> +7 (3952) 200-156
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="btn btn-primary header__btn" id="openFormBtn">Заказать звонок</button>
+            </div>
+            <button class="header__burger" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжитесь с нами любым удобным способом</p>
+            </div>
+        </section>
+
+        <section class="contacts-full" id="formSection">
+            <div class="container contacts__container">
+                <!-- Блок с формой -->
+                <div class="contacts__form-wrapper">
+                    <h2 class="section-title">Оставить заявку</h2>
+                    <p class="section-subtitle">Мы свяжемся с вами в ближайшее время</p>
+                       <form class="contact-form" id="orderForm">
+    <div class="contact-form__group">
+        <label for="name">Ваше имя <span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Например, Иван" required>
+    </div>
+    <div class="contact-form__group">
+        <label for="phone">Телефон <span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+        <small style="color: var(--text-muted); font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Пример: +7 (999) 123-45-67 (только ручной ввод)</small>
+    </div>
+    <div class="contact-form__group">
+        <label for="social">Telegram / VK / MAX (необязательно)</label>
+        <input type="text" id="social" name="social" placeholder="@username или ссылка">
+    </div>
+    <div class="contact-form__group">
+        <label for="service">Интересующая услуга</label>
+        <select id="service" name="service">
+            <option value="">Выберите из списка</option>
+            <option>Печать на одежде</option>
+            <option>Сувениры и призы</option>
+            <option>POS-продукция</option>
+            <option>Наружная реклама</option>
+            <option>Цифровые услуги</option>
+            <option>Разработка дизайна</option>
+            <option>Широкоформатная печать</option>
+            <option>Внутреняя реклама</option>
+            <option>Брендированная оклейка авто</option>
+        </select>
+    </div>
+    <div class="contact-form__group">
+        <label for="message">Комментарий</label>
+        <textarea id="message" name="message" rows="3" placeholder="Опишите вашу задачу..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-accent contact-form__submit">Отправить заявку</button>
+    <div id="formMessage" class="form-message"></div>
+</form>
+                </div>
+
+                <!-- Блок с контактами -->
+                <div class="contacts__info">
+                    <h2 class="section-title">Наши контакты</h2>
+                    <div class="contacts__item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+73952200156">+7 (3952) 200-156</a>
+                    </div>
+                    <div class="contacts__item">
+                        <i class="fab fa-telegram-plane"></i>
+                        <a href="https://t.me/alladin_irk">+7 (902) 515 63-35 (Telegram)</a>
+                    </div>
+                    <div class="contacts__item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:post1@alladin-irk.ru">post1@alladin-irk.ru</a>
+                    </div>
+                    <div class="contacts__item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Иркутск, ул. Горького, д. 36в </span>
+                    </div>
+                    <div class="contacts__social">
+                        <a href="https://vk.ru/olga_alladin" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/alladin_irkutsk" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== ПОДВАЛ (НАПОЛНЕННЫЙ) ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo">Алладин</div>
+                <p>Рекламное производство полного цикла в Иркутске. От дизайна до воплощения.</p>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__heading">Услуги</h4>
+                <a href="services.html">Печать на одежде</a>
+                <a href="services.html">Сувениры и призы</a>
+                <a href="services.html">POS-продукция</a>
+                <a href="services.html">Наружная реклама</a>
+            </div>
+            <div class="footer__contacts">
+                <h4 class="footer__heading">Контакты</h4>
+                <a href="tel:+73952200156"><i class="fas fa-phone-alt"></i> +7 (3952) 200-156</a>
+                <a href="mailto:post1@alladin-irk.ru"><i class="fas fa-envelope"></i> post1@alladin-irk.ru</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Иркутск, ул. Горького, д. 36в</a>
+            </div>
+            <div class="footer__social">
+                <h4 class="footer__heading">Мы в соцсетях</h4>
+                <div>
+                    <a href="https://vk.ru/olga_alladin" target="_blank" rel="noopener noreferrer"><i class="fab fa-vk"></i></a>
+                    <a href="https://t.me/alladin_irkutsk" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Рекламное производство «Алладин». Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
